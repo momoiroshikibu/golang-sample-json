@@ -23,7 +23,7 @@ func main() {
 }
 
 func getPersonalInfo(w http.ResponseWriter, r *http.Request) {
-  person := NewPerson("Matsuura", 28)
+  person := NewPerson("Kosuke", 28)
 
   json_response, err := json.Marshal(person)
   if err != nil {
